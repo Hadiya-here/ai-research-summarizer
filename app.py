@@ -6,7 +6,7 @@ from langchain.docstore.document import Document
 import os
 
 # Set your OpenAI API key
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 # Page config
