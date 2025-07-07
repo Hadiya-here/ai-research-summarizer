@@ -24,7 +24,7 @@ if uploaded_file is not None:
         raw_docs = [Document(page_content=text)]
 
         st.info("Summarizing with GPT-4...")
-        llm = ChatOpenAI(temperature=0, model_name="gpt-4")
+        llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
         chain = load_summarize_chain(llm, chain_type="stuff")
         summary = chain.run(raw_docs)
 
