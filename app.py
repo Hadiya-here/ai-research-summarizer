@@ -4,9 +4,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains.summarize import load_summarize_chain
 from langchain.docstore.document import Document
 import os
+import openai
 
-# Set your OpenAI API key
-OPENAI_API_KEY = "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"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 # Page config
