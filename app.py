@@ -1,13 +1,11 @@
 import streamlit as st
 import fitz  # PyMuPDF
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.chains.summarize import load_summarize_chain
 from langchain.docstore.document import Document
-import os
 import openai
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 # Page config
 st.set_page_config(page_title="AI Research Paper Summarizer", layout="centered")
